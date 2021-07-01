@@ -1,0 +1,59 @@
+
+
+
+
+
+<div class="table-responsive pl-4 pr-4 pt-3">
+
+
+	<form class="form-inline my-2" >
+        <div style="padding-left:2%; ">
+        
+	
+            <button  class="btn btn-primary btn-sm ml-2" (click)="forward('/piechart')"><i class="fa fa-plus"></i>
+			Add</button> &nbsp;</div>
+	</form>
+
+	<p>
+	
+	</p>
+
+<div class="table-responsive pl-4 pr-4">
+	
+
+
+
+	<p>
+
+	</p>
+
+
+
+	<table class="  table table-sm table-striped my-1 ">
+		<thead>
+			<tr>
+				<th>S.No.</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Description</th>
+                
+			</tr>
+		</thead>
+		<tbody>
+
+
+			<tr *ngFor="let e of form.list; let i=index" >
+
+				<td>{{i}}</td>
+                <td>{{e.name}}</td>
+                <td>{{e.address}}</td>
+                <td>{{e.desc}}</td>
+                
+                
+			</tr>
+		</tbody>
+	</table>
+
+
+	
+</div>
